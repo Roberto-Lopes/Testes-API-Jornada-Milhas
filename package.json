@@ -1,0 +1,15 @@
+{
+  "name": "testes-api-alura-challenge",
+  "version": "1.0.0",
+  "description": "Testes na API Alura Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "keywords": [],
+  "author": "Roberto Lopes",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.17.1"
+  }
+}
