@@ -16,6 +16,12 @@ describe('Get Depoimentos', () =>{
         })
     })
 
+    it('Retornar código 404 ao não encontrar um depoimento por Id', () => {
+        GETDepoimento.buscaDepoimentoPorId(999).should((response) =>{
+            expect(response.status).to.eq(404);
+        })
+    })
+
     it('Listar depoimentos da página home', () => {
         GETDepoimento.buscaDepoimentosHome().should((response) => {
             const listaDepoimentos = Object.keys(response.body).length;

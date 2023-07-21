@@ -9,4 +9,10 @@ describe('Delete Depoimento', () => {
             })
         })
     })
+
+    it('Retornar 404 ao não encontrar um depoimento por id', () => {
+        DELETEDepoimento.deletarDepoimento(999).should((response) => {
+            expect(response.status).to.eq(404);
+        })
+    })
 })
