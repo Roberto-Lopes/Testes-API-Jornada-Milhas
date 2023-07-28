@@ -1,6 +1,6 @@
-import * as GETDepoimento from '../requests/GETDepoimento.request';
+import * as GETDepoimento from '../requests/depoimentos/GETDepoimento.request';
 
-describe('Get Depoimentos', () =>{
+describe('Testes método GET', () =>{
     it('Listar todos os depoimentos', () => {
         GETDepoimento.buscaTodosDepoimentos().should((response) => {
             expect(response.status).to.eq(200);

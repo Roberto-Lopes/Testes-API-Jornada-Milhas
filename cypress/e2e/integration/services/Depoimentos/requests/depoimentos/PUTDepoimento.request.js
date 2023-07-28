@@ -1,4 +1,4 @@
-const payloadDepoimento = require('../payloads/update-Depoimento.json');
+const payloadDepoimento = require('../payloads/depoimentos/update-Depoimento.json');
 
 function atualizaDepoimento(_IdDepoimento){
     return cy.request({

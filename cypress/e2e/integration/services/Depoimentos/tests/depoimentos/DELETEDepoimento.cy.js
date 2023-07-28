@@ -1,7 +1,7 @@
-import * as DELETEDepoimento from '../requests/DELETEDepoimento.request';
-import * as GETDepoimento from '../requests/GETDepoimento.request';
+import * as DELETEDepoimento from '../requests/depoimentos/DELETEDepoimento.request';
+import * as GETDepoimento from '../requests/depoimentos/GETDepoimento.request';
 
-describe('Delete Depoimento', () => {
+describe('Testes metodo DELETE', () => {
     it('Deleta o primeiro depoimento', () => {
         GETDepoimento.buscaTodosDepoimentos().then((response) => {
             DELETEDepoimento.deletarDepoimento(response.body[0].id).then((resDeleteDepoimento) => {

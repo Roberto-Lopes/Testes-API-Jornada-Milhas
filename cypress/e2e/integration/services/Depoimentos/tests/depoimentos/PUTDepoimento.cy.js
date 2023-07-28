@@ -1,7 +1,7 @@
-import * as PUTDepoimento from '../requests/PUTDepoimento.request';
-import * as GETDepoimento from '../requests/GETDepoimento.request';
+import * as PUTDepoimento from '../requests/depoimentos/PUTDepoimento.request';
+import * as GETDepoimento from '../requests/depoimentos/GETDepoimento.request';
 
-describe('Put Depoimento', () =>{
+describe('Testes método PUT', () =>{
     it("Atualiza todos os campos de um depoimento", () =>{
         GETDepoimento.buscaTodosDepoimentos().then((response) => {
             PUTDepoimento.atualizaDepoimento(response.body[0].id).then((resPutDepoimento) => {
