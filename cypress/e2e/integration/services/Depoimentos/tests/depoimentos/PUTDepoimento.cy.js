@@ -1,5 +1,5 @@
-import * as PUTDepoimento from '../requests/depoimentos/PUTDepoimento.request';
-import * as GETDepoimento from '../requests/depoimentos/GETDepoimento.request';
+import * as PUTDepoimento from '../../requests/depoimentos/PUTDepoimento.request';
+import * as GETDepoimento from '../../requests/depoimentos/GETDepoimento.request';
 
 describe('Testes método PUT', () =>{
     it("Atualiza todos os campos de um depoimento", () =>{

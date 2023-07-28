@@ -1,5 +1,5 @@
-import * as PATCHDepoimento from '../requests/depoimentos/PATCHDepoimento.request';
-import * as GETDepoimento from '../requests/depoimentos/GETDepoimento.request';
+import * as PATCHDepoimento from '../../requests/depoimentos/PATCHDepoimento.request';
+import * as GETDepoimento from '../../requests/depoimentos/GETDepoimento.request';
 
 describe('Testes método PATCH', () => {
     it('Atualiza depoimento parcialmente', () => {

@@ -1,4 +1,4 @@
-import * as GETDepoimento from '../requests/depoimentos/GETDepoimento.request';
+import * as GETDepoimento from '../../requests/depoimentos/GETDepoimento.request';
 
 describe('Testes método GET', () =>{
     it('Listar todos os depoimentos', () => {

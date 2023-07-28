@@ -1,4 +1,4 @@
-import * as POSTDepoimento from '../requests/depoimentos/POSTDepoimento.request'
+import * as POSTDepoimento from '../../requests/depoimentos/POSTDepoimento.request'
 
 describe('Testes método POST', () =>{
     it('Adicionar um novo depoimento', () =>{

@@ -1,5 +1,5 @@
-import * as DELETEDepoimento from '../requests/depoimentos/DELETEDepoimento.request';
-import * as GETDepoimento from '../requests/depoimentos/GETDepoimento.request';
+import * as DELETEDepoimento from '../../requests/depoimentos/DELETEDepoimento.request';
+import * as GETDepoimento from '../../requests/depoimentos/GETDepoimento.request';
 
 describe('Testes metodo DELETE', () => {
     it('Deleta o primeiro depoimento', () => {
