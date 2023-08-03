@@ -1,7 +1,7 @@
 function buscaTodosDestinos(){
     return cy.request({
         method: 'GET',
-        url: 'Destinos',
+        url: 'Destinos?skip=0&take=1000000',
         failOnStatusCode: false
     })
 }
