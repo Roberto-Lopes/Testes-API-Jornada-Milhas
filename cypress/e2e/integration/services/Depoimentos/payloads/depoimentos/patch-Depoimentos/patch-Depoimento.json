@@ -2,6 +2,6 @@
     {
         "op": "replace",
         "path": "/nome",
-        "value": "Usuário Teste 5"
+        "value": "Usuário Teste"
     }
 ]
