@@ -22,7 +22,7 @@ describe('Testes método POST', () => {
     })
 
     it('Ao Adicionar um destino com o campo "foto_2" vazio a api deve retornar código 201 e o objeto criado deve receber os dados gerados pelo método GerarImagem da integração com ChatGPT', () => {
-        POSTDestino.addDestinoFoto1Vazio().should((response) => {
+        POSTDestino.addDestinoFoto2Vazio().should((response) => {
             expect(response.status).to.eq(201);
             expect(response.body.foto_2).to.not.be.empty;
         })
@@ -32,6 +32,13 @@ describe('Testes método POST', () => {
         POSTDestino.addDestinoMetaVazio().should((response) =>{
             expect(response.status).to.eq(400);
             expect(response.body).to.have.property('errors').and.to.have.property('meta').and.to.include('O destino deve possuir uma meta');
+        })
+    })
+
+    it('Ao Adicionar um destino com o campo "texto_descritivo" vazio a api deve retornar código 201 e o objeto criado deve receber os dados gerados pelo método GerarImagem da integração com ChatGPT', () =>{
+        POSTDestino.addDestinoTextoDescrivitoVazio().should((response) => {
+            expect(response.status).to.eq(201);
+            expect(response.body.texto_descritivo).to.not.be.empty;
         })
     })
 

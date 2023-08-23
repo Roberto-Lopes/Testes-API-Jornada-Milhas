@@ -3,6 +3,7 @@ const payloadDestinoFoto1Vazio = require('../../payloads/destinos/add-Destinos/a
 const payloadDestinoFoto2Vazio = require('../../payloads/destinos/add-Destinos/add-Destino-Foto_2-Vazio.json');
 const payloadDestinoNomeVazio = require('../../payloads/destinos/add-Destinos/add-Destino-Nome-Vazio.json');
 const payloadDestinoMetaVazio = require('../../payloads/destinos/add-Destinos/add-Destino-Meta-Vazio.json');
+const payloadDestinoTextoDescritivoVazio = require('../../payloads/destinos/add-Destinos/add-Destino-Texto-Descritivo-Vazio.json');
 const payloadDestinoNomeMenorQueMinimo = require('../../payloads/destinos/add-Destinos/add-Destino-Nome-Menor-Que-Minimo.json');
 const payloadDestinoNomeMaiorQueMaximo = require('../../payloads/destinos/add-Destinos/add-Destino-Nome-Maior-Que-Maximo.json');
 const payloadDestinoMetaMaiorQueMaximo = require('../../payloads/destinos/add-Destinos/add-Destino-Meta-Maior-Que-Maximo.json');
@@ -53,6 +54,14 @@ function addDestinoMetaVazio(){
     })
 }
 
+function addDestinoTextoDescrivitoVazio(){
+    return cy.request({
+        method: 'POST',
+        url: 'Destinos',
+        failOnStatusCode: false,
+        body: payloadDestinoTextoDescritivoVazio
+    })
+}
 function addDestinoNomeMenorQueMinimo(){
     return cy.request({
         method: 'POST',
@@ -88,5 +97,6 @@ export {
     addDestinoMetaVazio,
     addDestinoNomeMenorQueMinimo,
     addDestinoNomeMaiorQueMaximo,
-    addDestinoMetaMaiorQueMaximo
+    addDestinoMetaMaiorQueMaximo,
+    addDestinoTextoDescrivitoVazio
 }
